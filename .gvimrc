@@ -5,3 +5,5 @@ elseif has("gui_macvim")
 elseif has("gui_win32")
     set guifont=DejaVu_Sans_Mono:h11
 end
+
+set guioptions-=T

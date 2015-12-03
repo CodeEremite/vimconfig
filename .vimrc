@@ -17,7 +17,6 @@ set showmatch   "代码匹配
 set number      "显示行号
 set ruler     	" show the cursor position all the time
 set showcmd	    " display incomplete commands
-set cursorline  "为光标所在行加下划线
 set autoread    "文件在vim外修改过，自动重新读入“
 set laststatus=2 "总是显示状态行
 
@@ -27,6 +26,7 @@ set hls         "高高显示匹配项
 set foldmethod=syntax "代码折叠
 
 set fileencodings=utf-8,gbk "使用utf-8或gbk打开文件
+
 
 "插件管理,设置pathogen
 "pathogen{
@@ -54,5 +54,14 @@ nnoremap <leader>tl :Tlist<CR>
 "powerline{
 set guifont=PowerlineSymbols\for\Powerline
 set t_Co=256
-let g:Powerline_symbols='fancy'
+let g:Powerline_symbols='unicode' "'fancy'
 "}
+
+
+colorscheme elflord   "peachpuff 
+"hightlight the cursorline and cursorcolumn
+set cursorline  
+"set cursorcolumn
+hi cursorline cterm=NONE ctermbg=black ctermfg=green "guibg=NONE guifg=NONE
+"hi cursorcolumn  cterm=NONE ctermbg=black ctermfg=green "guibg=NONE guifg=NONE
+
