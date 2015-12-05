@@ -2,13 +2,11 @@
 Vim配置
 
 安装taglist
-git clone git@github.com/vim-scripts/taglist.vim.git
+git clone git@github.com:vim-scripts/taglist.vim.git
 
 安装NERDTree
-git clone git@github.com/scrooloose/nerdtree.git
+git clone git@github.com:scrooloose/nerdtree.git
 
-安装Powerline
-git clone git@github.com/Lokaltog/vim-powerline.git
+安装airline
+git clone git@github.com:bling/vim-airline.git
 
-安装Supertab
-git clone git@github.com:ervandew/supertab.git

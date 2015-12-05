@@ -7,3 +7,5 @@ elseif has("gui_win32")
 end
 
 set guioptions-=T
+set background=dark
+colo solarized

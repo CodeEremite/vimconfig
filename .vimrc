@@ -38,6 +38,9 @@ filetype plugin indent on
 "NERDTree{
 nnoremap <leader>tr :NERDTreeMirror<CR>
 nnoremap <leader>tr :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreetype") && b:NERDTreetype == "primary") | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")) | q | endif
 "}
 
 "配置taglist
@@ -50,18 +53,27 @@ let Tlist_Ctags_Cmd='/usr/bin/ctags'   "设置ctags命令的位置
 nnoremap <leader>tl :Tlist<CR>           
 "}
 
-"设置powerline状态栏主题
-"powerline{
-set guifont=PowerlineSymbols\for\Powerline
+"设置airline状态栏主题
+"airline{
 set t_Co=256
-let g:Powerline_symbols='unicode' "'fancy'
+let g:airline_powerline_fonts=0
+if !exists('g:airline_symbols')
+    let g:airline_symbols={}
+endif
+"let g:airline_left_sep = '▶'
+"let g:airline_right_sep = '◀'
+"let g:airline_section_b = '%{strftime("%c")}'
+"let g:airline_section_y = 'BN: %{bufnr("%")}'
+let g:airline#extensions#tabline#enabled = 1
 "}
 
-
-colorscheme elflord   "peachpuff 
+set background=dark
+"colorscheme solarized
+"colorscheme desert 
+colo elflord   "peachpuff 
 "hightlight the cursorline and cursorcolumn
 set cursorline  
+hi cursorline cterm=NONE ctermbg=black 
 "set cursorcolumn
-hi cursorline cterm=NONE ctermbg=black ctermfg=green "guibg=NONE guifg=NONE
-"hi cursorcolumn  cterm=NONE ctermbg=black ctermfg=green "guibg=NONE guifg=NONE
+"hi cursorcolumn cterm=NONE ctermbg=black
 
