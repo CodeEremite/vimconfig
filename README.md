@@ -13,5 +13,6 @@
     ln -s ~/.vim/.vimrc ~/.vimrc  
 备注：  
 1.这里默认已装好ctags,安装目录为: /usr/bin   如你的安装位置不同，请更改.vimrc中taglist设置  
-
+2.升级插件方法:  
+    git submodule foreach 'git checkout master && git pull'  
 # 我的vim配置说明
