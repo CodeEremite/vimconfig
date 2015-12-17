@@ -87,7 +87,7 @@ let Tlist_GainFocus_On_ToggleOpen=1    "打开taglist时，光标保留在taglis
 let Tlist_Ctags_Cmd='/usr/bin/ctags'   "设置ctags命令的位置
 "}}}
 
-nnoremap <leader>ev :split$MYVIMRC<cr>
+nnoremap <leader>ev :vsplit$MYVIMRC<cr>
 nnoremap <leader>sv :source$MYVIMRC<cr>
 
 inoremap jk <esc>
