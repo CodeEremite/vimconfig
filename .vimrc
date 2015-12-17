@@ -7,9 +7,9 @@ filetype plugin indent on
 
 "editor settings {{{
 set nocompatible
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set history=500
 set showcmd                           " show typed command in status bar
-set fileencodings=utf-8,gbk "使用utf-8或gbk打开文件
 set backspace=indent,eol,start
 set nowrap                            " dont wrap lines
 set number                            "显示行号
@@ -50,6 +50,9 @@ set cursorline cursorcolumn
 if has('gui_running')
     set guioptions-=T             "去掉gvim工具栏
     colorscheme solarized
+   " set showtabline=2
+    set columns=140
+    set lines=40
 else
     colorscheme molokai
 endif
@@ -89,6 +92,11 @@ let Tlist_Ctags_Cmd='/usr/bin/ctags'   "设置ctags命令的位置
 
 nnoremap <leader>ev :vsplit$MYVIMRC<cr>
 nnoremap <leader>sv :source$MYVIMRC<cr>
+" easier navigation between split windows
+nnoremap <c-j> <c-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-h> <c-w>h
+nnoremap <c-l> <c-w>l
 
 inoremap jk <esc>
 inoremap <esc> <nop>
