@@ -70,9 +70,6 @@ augroup basicsetting
 augroup END
 "}}}
 "设置插件NERDTree{{{
-"设置快捷键
-nnoremap <leader>tr :NERDTreeMirror<CR>
-nnoremap <leader>tr :NERDTreeToggle<CR>
 "当vim打开时自动打开nerdtree,当只剩nerdtree时退出vim
 augroup NERDTreeConfig
     autocmd!
@@ -81,15 +78,18 @@ augroup NERDTreeConfig
 augroup END
 "}}}
 "设置插件taglist {{{
-"设置快捷键
-nnoremap <leader>tl :Tlist<CR>           
 let Tlist_Show_One_File=1              "只显示当前文件的taglist
 let Tlist_Exit_OnlyWindow=1            "如果taglist是最后一个窗口，则退出
 let Tlist_Use_Right_Window=1           "在右侧窗口显示taglist
 let Tlist_GainFocus_On_ToggleOpen=1    "打开taglist时，光标保留在taglist中
 let Tlist_Ctags_Cmd='/usr/bin/ctags'   "设置ctags命令的位置
 "}}}
-
+" keybindings for plugin toggle{{{
+nnoremap <leader>tr :NERDTreeMirror<CR>
+nnoremap <leader>tr :NERDTreeToggle<CR>
+nnoremap <leader>tl :Tlist<CR>           
+nnoremap <leader>gd :GundoToggle<cr>
+" }}}
 nnoremap <leader>ev :vsplit$MYVIMRC<cr>
 nnoremap <leader>sv :source$MYVIMRC<cr>
 " easier navigation between split windows
