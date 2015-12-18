@@ -36,13 +36,11 @@ set hlsearch                          "高亮显示匹配项
 "}}}
 "Statusline settings {{{
 set laststatus=2                      "始终显示状态行
-set statusline=%f
-set statusline+=\ %m
-set statusline+=\ %y
-set statusline+=%=
-set statusline+=%l
-set statusline+=/
-set statusline+=%L
+set statusline=%f\ %m%r%y                          "文件名 编辑状态 文件类型
+set statusline+=%=                                 "格式控制从右边开始排列
+set statusline+=%{&ff}                             "文件系统(DOS UNIX)
+set statusline+=\ %{''.(&fenc!=''?&fenc:&enc).''}  "文件编码
+set statusline+=\ Row:%l/%L(%p%%)\ Col:%c          "光标位置
 "}}}
 "Colorscheme Setting {{{
 set background=dark
