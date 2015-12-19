@@ -1,6 +1,6 @@
 " --------------------------------------------
 " Maintainer:	rob  <codefighter@foxmail.com>
-" --------------------------------------------
+"--------------------------------------------
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -83,10 +83,10 @@ let Tlist_GainFocus_On_ToggleOpen=1    "打开taglist时，光标保留在taglis
 let Tlist_Ctags_Cmd='/usr/bin/ctags'   "设置ctags命令的位置
 "}}}
 " keybindings for plugin toggle{{{
-nnoremap <leader>tr :NERDTreeMirror<CR>
-nnoremap <leader>tr :NERDTreeToggle<CR>
-nnoremap <leader>tl :Tlist<CR>           
-nnoremap <leader>gd :GundoToggle<cr>
+nnoremap <F2> :NERDTreeMirror<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
+nnoremap <F3> :Tlist<CR>           
+nnoremap <F4> :GundoToggle<cr>
 " }}}
 nnoremap <leader>ev :vsplit$MYVIMRC<cr>
 nnoremap <leader>sv :source$MYVIMRC<cr>
