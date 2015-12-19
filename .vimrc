@@ -47,6 +47,9 @@ set background=dark
 set cursorline cursorcolumn
 if has('gui_running')
     set guioptions-=T             "去掉gvim工具栏
+    set guioptions-=L             "去掉gvim左滚动条
+    set guioptions-=r             "去掉gvim右滚动条
+    set guioptions-=b             "去掉gvim底部滚动条
     colorscheme solarized
    " set showtabline=2
     set columns=140
