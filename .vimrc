@@ -85,6 +85,9 @@ let Tlist_Use_Right_Window=1           "在右侧窗口显示taglist
 let Tlist_GainFocus_On_ToggleOpen=1    "打开taglist时，光标保留在taglist中
 let Tlist_Ctags_Cmd='/usr/bin/ctags'   "设置ctags命令的位置
 "}}}
+" 设置插件vim-markdown {{{
+" let g:markdown_fenced_languages=['html','python','bash=sh']
+" }}}
 " keybindings for plugin toggle{{{
 nnoremap <F2> :NERDTreeMirror<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
