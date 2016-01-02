@@ -60,9 +60,9 @@ if has("gui_gtk2")
     set columns=140
     set lines=40
 elseif has("gui_macvim")
-    set guifont=DejaVu_Sans_Mono:h11
-    set columns=180
-    set lines=60
+    set guifont=Menlo_Regular:h13
+    set columns=160
+    set lines=50
 elseif has("gui_win32")
     set guifont=DejaVu_Sans_Mono:h11
 end
