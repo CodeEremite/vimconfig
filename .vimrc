@@ -52,15 +52,17 @@ if has('gui_running')
     set guioptions-=b             "去掉gvim底部滚动条
     colorscheme solarized
    " set showtabline=2
-    set columns=140
-    set lines=40
 else
     colorscheme molokai
 endif
 if has("gui_gtk2")
     set guifont=DejaVu\ Sans\ Mono\ 11
+    set columns=140
+    set lines=40
 elseif has("gui_macvim")
     set guifont=DejaVu_Sans_Mono:h11
+    set columns=180
+    set lines=60
 elseif has("gui_win32")
     set guifont=DejaVu_Sans_Mono:h11
 end
@@ -111,4 +113,3 @@ augroup filetype_vim
     autocmd FileType vim setlocal foldmethod=marker
 augroup END
 
-"hello 2016
