@@ -53,6 +53,8 @@ if has('gui_running')
     colorscheme solarized
    " set showtabline=2
 else
+    set columns=140
+    set lines=40
     colorscheme molokai
 endif
 if has("gui_gtk2")
