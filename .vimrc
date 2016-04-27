@@ -78,7 +78,7 @@ augroup END
 "当vim打开时自动打开nerdtree,当只剩nerdtree时退出vim
 augroup NERDTreeConfig
     autocmd!
-    autocmd vimenter * NERDTree
+    "autocmd vimenter * NERDTree
     autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree")) | q | endif
 augroup END
 "}}}
