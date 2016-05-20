@@ -11,6 +11,8 @@
     git submodule init  
     git submodule update  
     ln -s ~/.vim/.vimrc ~/.vimrc  
+    ln -s ~/.vim/gitconfig ~/.gitconfig
+    
 备注：  
 1.这里默认已装好ctags,安装目录为: /usr/bin   如你的安装位置不同，请更改.vimrc中taglist设置  
 2.升级插件方法:  
