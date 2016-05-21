@@ -12,6 +12,7 @@
     git submodule update  
     ln -s ~/.vim/.vimrc ~/.vimrc  
     ln -s ~/.vim/gitconfig ~/.gitconfig
+    ln -s ~/.vim/tmuxconfig ~/.tmux.conf
     
 备注：  
 1.这里默认已装好ctags,安装目录为: /usr/bin   如你的安装位置不同，请更改.vimrc中taglist设置  
