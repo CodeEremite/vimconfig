@@ -11,7 +11,7 @@
     git submodule init  
     git submodule update  
     ln -s ~/.vim/.vimrc ~/.vimrc  
-    ln -s ~/.vim/gitconfig ~/.gitconfig
+    ln -s ~/.vim/gitconfig ~/.gitconfig    
     ln -s ~/.vim/tmuxconfig ~/.tmux.conf
     
 备注：  
