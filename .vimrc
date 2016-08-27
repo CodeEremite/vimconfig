@@ -98,6 +98,16 @@ nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <F3> :Tlist<CR>           
 nnoremap <F4> :GundoToggle<cr>
 " }}}
+" 设置插件quickrun{{{
+let g:quickrun_config = {
+\    "_" : {
+\         "outputter" : "message",
+\    },
+\}
+let g:quickrun_no_default_key_mappings = 1
+nmap <Leader>r <Plug>(quickrun)
+map <F10> :QuickRun<CR>
+" }}}
 nnoremap <leader>ev :vsplit$MYVIMRC<cr>
 nnoremap <leader>sv :source$MYVIMRC<cr>
 " easier navigation between split windows
